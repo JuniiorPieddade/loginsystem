@@ -1,0 +1,18 @@
+PARA VALIDAR PROCESSO:
+Como funciona um sistema de login?
+
+1 -> Como eu sei que um usuário está logado?
+- Saber que tem um Usuario logado, utilizando algum dado do navegador, uma variavel ou algo do tipo.
+2 -> Se tiver, eu tenho que VALIDAR este usuário.
+3 -> Se sim, libera o acesso.
+
+PARA LOGAR:
+1 -> Recebe os dados de login.
+2 -> Envia uma requisição para o BACKEND validar estes dados no banco de dados.
+3 -> Estando correto, salva-se alguma referência ao usuário no browser.(exemplo TOKEN)
+4 -> Se estiver errado, avisa que está errado.
+
+PARA DESLOGAR: 
+1 -> Apago a referência que existir no browser.
+1.1 -> Enviar uma requisição ao BACKEND avisando para destruir aquela referência.
+2 -> Atualizo a página.
